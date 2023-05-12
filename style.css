@@ -53,6 +53,26 @@ body {
     cursor: pointer;
 }
 
+
+.apps {
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px 5px;
+    background-color: #fff;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    z-index: 999;
+    overflow-y: scroll;
+}
+.none {
+    display: none;
+}
+
 /* *********************** Hero Style ************************ */
 .hero {
     height: 100px;
@@ -136,7 +156,8 @@ body {
     flex-wrap: wrap;
 }
 
-.recent-search > article {
+.article {
+    display: block;
     width: 90px;
     height: 90px;
     margin-bottom: 5px;
@@ -144,19 +165,25 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    text-decoration: none;
+    color: #000000;
 }
 
-.recent-search > article:hover {
+.article:hover {
     background-color: #ddd8d8;
     border-radius: 5px;
 }
 
-.recent-search > article  svg{
+.article  svg{
     width: 20px;
     height: 20px;
 }
+.article  img{
+    width: 30px;
+    height: 30px;
+}
 
-.recent-search > article div {
+.article div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -166,7 +193,7 @@ body {
     font-size: 1.2rem;
 }
 
-.recent-search > article p {
+.article p {
     font-size: .8rem;
 }
 
@@ -219,12 +246,12 @@ footer > a span {
     .recent-search {
         width: 400px;
     }
-    .recent-search > article {
+    .recent-search > .article {
         width: 112px;
         height: 112px;
     }
 
-    recent-search > article  svg{
+    recent-search > .article  svg{
         width: 24px;
         height: 24px;
     }
